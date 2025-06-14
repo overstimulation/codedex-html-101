@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form>
+      <label for="reviewer-name">Reviewer name: </label>
+      <input type="text" id="reviewer-name" required />
+      <br /><br />
+      <label for="reviewed-item">Reviewed item: </label>
+      <input type="text" id="reviewed-item" required />
+      <br /><br />
+      <label>Would you try again?</label>
+      <label for="try-again-yes">Yes</label>
+      <input type="radio" id="try-again-yes" name="try-again" value="yes" />
+      <label for="try-again-maybe">Maybe</label>
+      <input type="radio" id="try-again-maybe" name="try-again" value="maybe" />
+      <label for="try-again-no">No</label>
+      <input type="radio" id="try-again-no" name="try-again" value="no" />
+      <br /><br />
+      <label for="rating">Rating (out of 5): </label>
+      <input type="number" id="rating" name="rating" min="1" max="5" required />
+      <br /><br />
+      <label for="comments">Comments (max 250 characters): </label>
+      <textarea id="comments" name="comments" maxlength="250"></textarea>
+      <br /><br />
+      <input type="submit" value="Submit Review" />
+    </form>
+  </body>
+</html>
